@@ -37,6 +37,7 @@ describe('Eshop succesfull run', () => {
     cart.continueToDeliveryDetails()
 
     delivery.setAdressDelivery(person, adress, 'logged')
+    //Zakomentováno aby neposílalo nové a nové leady
     //delivery.sendOrder()
   })
 })
