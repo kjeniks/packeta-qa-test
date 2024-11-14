@@ -19,6 +19,9 @@ jobs:
 
       - name: Run e2e tests
         uses: cypress-io/github-action@v6
+        env:
+          CYPRESS_USER_EMAIL: ${{ secrets.USER_EMAIL }}
+          CYPRESS_USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
 
         with:
           spec: cypress/e2e/
