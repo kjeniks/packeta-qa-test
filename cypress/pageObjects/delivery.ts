@@ -23,6 +23,7 @@ const el = {
   },
 }
 
+//Aktuálně nepoužívané, díky tomu, že funguje jako iframe, bylo by potřeba doladit jisté náležitosti s kódem a případně s api aby posílalo data i v případě otevření iframu v jiném okně. Aktuálně chybí mnoho pomocných selectorů k tomu aby mohlo 100% fungovat.
 export function setZetBox(adress: string) {
   cy.url().then(url => {
     cy.intercept('GET', '**/v6/wps/api/widget/v2/clusters/**').as('mapaDataLodaded')

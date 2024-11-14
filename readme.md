@@ -9,6 +9,9 @@ This project automates the order placement process on [eshop.zasilkovna.cz](http
 
 - [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed
 - [Cypress](https://www.cypress.io/) installed (Run `npm install cypress` if not yet installed)
+- You need create your own '.env' file with following parameters:
+- `USER_EMAIL 
+USER_PASSWORD `
 
 ## Setup
 
@@ -19,4 +22,5 @@ This project automates the order placement process on [eshop.zasilkovna.cz](http
 ## Runing Tests
 
 1. Running headless `npm run cyStart`
-1. Running in debuging mode `npm run cyOpen`
+2. Running in debuging mode `npm run cyOpen`
+3. You can run pipelines here in Github Actions
