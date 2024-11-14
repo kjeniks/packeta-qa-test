@@ -37,4 +37,5 @@ describe('Eshop succesfull run', () => {
 
 /**
  * V Ideálním případě by měl na konci proběhnout API check do databáze zda-li se objednávka správně nastavila.
+ *
  */
