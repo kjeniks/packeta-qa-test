@@ -24,7 +24,6 @@ describe('Eshop succesfull run', () => {
   })
 
   it('Host user successful buy', () => {
-    cy.log(randomAdress.toString())
     cy.visit(URLS.mainEshopAll)
 
     shopListing.addRadnomItemIntoCartFromTile()
