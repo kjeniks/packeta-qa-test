@@ -5,6 +5,7 @@ import * as shopListing from '../pageObjects/shopListing'
 import * as popup from '../pageObjects/popups'
 import * as cart from '../pageObjects/cart'
 import * as delivery from '../pageObjects/delivery'
+import { adress1, adress2, adress3, adress4, adress5, adress6 } from '../constants/testData'
 
 const adressData: any = [adress1, adress2, adress3, adress4, adress5, adress6]
 const randomAdress: Adress = adressData[Math.floor(Math.random() * adressData.length - 1)]

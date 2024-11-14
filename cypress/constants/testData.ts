@@ -1,4 +1,4 @@
-const adress1: Adress = {
+export const adress1: Adress = {
   street: 'Panská',
   number: '3',
   city: 'Praha 1',
@@ -6,7 +6,7 @@ const adress1: Adress = {
   zip: '19000',
 }
 
-const adress2: Adress = {
+export const adress2: Adress = {
   street: 'Nádražní',
   number: '12',
   city: 'Brno',
@@ -14,7 +14,7 @@ const adress2: Adress = {
   zip: '60200',
 }
 
-const adress3: Adress = {
+export const adress3: Adress = {
   street: 'Dlouhá',
   number: '8',
   city: 'Ostrava',
@@ -22,7 +22,7 @@ const adress3: Adress = {
   zip: '70200',
 }
 
-const adress4: Adress = {
+export const adress4: Adress = {
   street: 'Smetanova',
   number: '15',
   city: 'Plzeň',
@@ -30,7 +30,7 @@ const adress4: Adress = {
   zip: '30100',
 }
 
-const adress5: Adress = {
+export const adress5: Adress = {
   street: 'Masarykova',
   number: '45',
   city: 'Ústí nad Labem',
@@ -38,7 +38,7 @@ const adress5: Adress = {
   zip: '40001',
 }
 
-const adress6: Adress = {
+export const adress6: Adress = {
   street: 'Krátká',
   number: '9',
   city: 'Liberec',
