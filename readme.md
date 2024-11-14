@@ -9,9 +9,7 @@ This project automates the order placement process on [eshop.zasilkovna.cz](http
 
 - [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed
 - [Cypress](https://www.cypress.io/) installed (Run `npm install cypress` if not yet installed)
-- You need create your own '.env' file with following parameters:
-- `USER_EMAIL 
-USER_PASSWORD `
+- You need create your own `.env` file with following parameters `'USER_EMAIL'` & `'USER_PASSWORD'` to be able to run the test with logged user.
 
 ## Setup
 
