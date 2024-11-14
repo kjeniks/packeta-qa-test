@@ -41,3 +41,7 @@ describe('Eshop succesfull run', () => {
     //delivery.sendOrder()
   })
 })
+
+/**
+ * V Ideálním případě by měl na konci proběhnout API check do databáze zda-li se objednávka správně nastavila.
+ */

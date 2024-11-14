@@ -1,7 +1,6 @@
 node_modules
 .env
 
-
 #cypress
 cypress/node_modules/
 cypress/screenshots/

@@ -6,13 +6,8 @@ import * as popup from '../pageObjects/popups'
 import * as cart from '../pageObjects/cart'
 import * as delivery from '../pageObjects/delivery'
 
-const adress: Adress = {
-  street: 'Panská',
-  number: '3',
-  city: 'Praha 1',
-  discrit: 'Praha',
-  zip: '19000',
-}
+const adressData: any = [adress1, adress2, adress3, adress4, adress5, adress6]
+const randomAdress: Adress = adressData[Math.floor(Math.random() * adressData.length - 1)]
 
 const person: Person = {
   name: 'John Doe',
@@ -34,8 +29,12 @@ describe('Eshop succesfull run', () => {
     cart.confirmCartItemsToBuy()
     cart.continueToDeliveryDetails()
 
-    delivery.setAdressDelivery(person, adress, 'host')
+    delivery.setAdressDelivery(person, randomAdress, 'host')
     //Zakomentováno aby neposílalo nové a nové leady
     //delivery.sendOrder()
   })
 })
+
+/**
+ * V Ideálním případě by měl na konci proběhnout API check do databáze zda-li se objednávka správně nastavila.
+ */
