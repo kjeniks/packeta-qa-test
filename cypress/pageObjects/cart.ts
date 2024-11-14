@@ -24,16 +24,15 @@ export function emptyCartIfNeeded() {
   cy.visit(URLS.cart)
   cy.intercept('POST', '**action/Cart/deleteCartItem/').as('deleteEvent')
   cy.get(el.content).should('be.visible')
-  cy.get('body').then(content => {
-    if (content.find('#empty-cart').length > 0) {
-      cy.log('Košík je prázdný, přecházím na jinou část testu')
+  cy.get('#cart-wrapper').then(content => {
+    cy.log(content.text())
+    //aktuálně náhradní řešení, ideálně vyřešit za pomocí lepšího tagování či api kontroly
+    if (content.text().includes('košík je prázdný')) {
     } else {
-      cy.log('Košík obsahuje položky, provádím mazání')
-
       cy.dataCy(el.listOfItems).should('be.visible')
       cy.get(`[data-testid*="${el.item}"]`).each(item => {
         cy.wrap(item).within(() => {
-          cy.dataCy(el.price).trigger('mouseover') // Vyvolá pouze pokud je nutné
+          cy.dataCy(el.price).trigger('mouseover')
           cy.dataCy(el.deleteButton).click()
           cy.wait('@deleteEvent')
             .its('response')

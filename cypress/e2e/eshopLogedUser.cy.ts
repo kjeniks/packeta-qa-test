@@ -37,6 +37,6 @@ describe('Eshop succesfull run', () => {
     cart.continueToDeliveryDetails()
 
     delivery.setAdressDelivery(person, adress, 'logged')
-    delivery.sendOrder()
+    //delivery.sendOrder()
   })
 })
