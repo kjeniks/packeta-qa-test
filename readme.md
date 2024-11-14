@@ -18,5 +18,5 @@ This project automates the order placement process on [eshop.zasilkovna.cz](http
 
 ## Runing Tests
 
-1. Running headless `npx run cyStart`
-1. Running in debuging mode `npx run cyOpen`
+1. Running headless `npm run cyStart`
+1. Running in debuging mode `npm run cyOpen`
